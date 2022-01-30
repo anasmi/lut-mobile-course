@@ -52,3 +52,20 @@ Making alignments explicit asserts that view is rendered properly in both orient
 
 Notes:
 - `strings.xml` file is also good for internalization of an app.
+- Activity has lifecycle of events, thus we creating the code inside `onCreate` method, as it's the first one to be called. 
+That is where we can attach listeners.
+- To launch another activity, we call `startActivity` method
+
+## Part 3
+
+ListView is located under Legacy components, thus I am using `RecyclerView` instead. https://stackoverflow.com/questions/50079026/why-are-some-views-located-inside-the-legacy-tab-in-android-studio-3-1-and-what
+
+This added a lot of complexity to the exercise, as a custom Adapter must be implemented in order for an item to be shown. Also, each item gets its own
+`ViewHolder` that defines how each separate has to be displayed. 
+Important notices is that unless a layout manager of the RecyclerViewer is specified, no items is rendered at all. Also, a textView of an item must have width and height of the content, not parent element.
+Otherwise, only one element got rendered.
+Useful links were, at least : 
+- https://stackoverflow.com/questions/50079026/why-are-some-views-located-inside-the-legacy-tab-in-android-studio-3-1-and-what
+- https://developer.android.com/guide/topics/ui/layout/recyclerview
+- https://stackoverflow.com/questions/27705928/recycler-view-not-showing
+- https://stackoverflow.com/questions/38926071/recyclerview-setadapter-does-not-accept-arrayadapter
