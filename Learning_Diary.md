@@ -32,9 +32,23 @@ how application should be started, including what is the main activity of the ap
   - Kotlin has also auto-import settings.
   - First, an api needs to be installed and licenses accepted. Otherwise, simulator doesn't start up.
 
-  ## Part 2
+## Part 2
   Core elements to android development are :
   - Activity : a rectangular area that displays something, not necessary a view only. Button also extends activity, for example.
   - Intent : an action we want to be performed. Works as an imediator, represents what a user what to do.
   - IntentService: does a task intent wants to be performed. Can be done on background.
   - BroadcastReceivers: received an intent from a `sendBroadcast` method often indicating that some work has been completed.
+
+In this part, following the video we are going to create a simple navigation example, where two buttons are added to main screen. Clicking one button
+activates another view in the application and the second button opens Chrome browser, if one is available.
+I've created a new project for this application. So this project is not related to the one created in previous part. Alternative would be to create
+separate branches for each part, but it's a bit easier to follow and add changes later on, if everything is present in master.
+
+Aligning elements vertically/horizontally in a parent layout, I have to first select an element. Otherwise, if I select all child components and align them,
+they are overlapping as they are all moved to the midle.
+So, in this example, the second button is positioned relatively to the first one. It's top is attached to the bottom of the first button.
+Both are aligned to be in the middle of the view, and the first button is centered vertically in its parent layout.
+Making alignments explicit asserts that view is rendered properly in both orientations: portrait and landscape.
+
+Notes:
+- `strings.xml` file is also good for internalization of an app.
