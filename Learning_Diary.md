@@ -31,3 +31,10 @@ Other notes:
 how application should be started, including what is the main activity of the app.
   - Kotlin has also auto-import settings.
   - First, an api needs to be installed and licenses accepted. Otherwise, simulator doesn't start up.
+
+  ## Part 2
+  Core elements to android development are :
+  - Activity : a rectangular area that displays something, not necessary a view only. Button also extends activity, for example.
+  - Intent : an action we want to be performed. Works as an imediator, represents what a user what to do.
+  - IntentService: does a task intent wants to be performed. Can be done on background.
+  - BroadcastReceivers: received an intent from a `sendBroadcast` method often indicating that some work has been completed.
