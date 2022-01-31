@@ -1,5 +1,6 @@
 # Learning diary
-##Part1
+
+## Part1
 25.01.2022 & 26.01.2022 &28.01.2022
 
 I started to set-up environment by watching the first introduction video. Video is a bit outdated
@@ -59,11 +60,16 @@ That is where we can attach listeners.
 ## Part 3
 
 ListView is located under Legacy components, thus I am using `RecyclerView` instead. https://stackoverflow.com/questions/50079026/why-are-some-views-located-inside-the-legacy-tab-in-android-studio-3-1-and-what
+`RecycleView` is designed for the same person, but it's performance optimized. When an item inside the list scrolls from the visibility zone, components created for it are re-used by elements, that come into view.
+So, ultimately, if we have hundred items to display, only part of them is actually rendered. This improves performance and responsiveness of a view, where this view is presented.
 
-This added a lot of complexity to the exercise, as a custom Adapter must be implemented in order for an item to be shown. Also, each item gets its own
-`ViewHolder` that defines how each separate has to be displayed. 
+Neverteless, using another element added a lot of complexity to the exercises, as a custom Adapter must be implemented in order for an item to be shown from the beginning.
+Also, each item gets its own `ViewHolder` that defines how each separate has to be displayed. I've implemented this class as an inner class of the Adapter.
 Important notices is that unless a layout manager of the RecyclerViewer is specified, no items is rendered at all. Also, a textView of an item must have width and height of the content, not parent element.
 Otherwise, only one element got rendered.
+Next, we have added textViews for descriptions and prices. Here, I have assumed that amount ot items in each array (items, descriptions, prices) is the same.
+Othwerwise, adapter might through ArrayOutOfBoundException. The instructor in the video later on also creates a custom adapter to assign values from resource arrays into the view correctly.
+
 Useful links were, at least : 
 - https://stackoverflow.com/questions/50079026/why-are-some-views-located-inside-the-legacy-tab-in-android-studio-3-1-and-what
 - https://developer.android.com/guide/topics/ui/layout/recyclerview
