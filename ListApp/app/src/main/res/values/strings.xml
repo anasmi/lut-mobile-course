@@ -2,9 +2,9 @@
     <string name="app_name">List App</string>
 
     <string-array name="items">
-        <item>Peach</item>
-        <item>Tomato</item>
-        <item>Squash</item>
+        <item>Apple</item>
+        <item>Carrot</item>
+        <item>Bread</item>
     </string-array>
 
     <string-array name="prices">
@@ -14,8 +14,8 @@
     </string-array>
 
     <string-array name="descriptions">
-        <item>Tasty peaches from Georgia</item>
-        <item>Tomatoes are healthy</item>
-        <item>Some weird fruit</item>
+        <item>Red Apple from Georgia</item>
+        <item>Carrots are healthy</item>
+        <item>Reissumies bread</item>
     </string-array>
 </resources>

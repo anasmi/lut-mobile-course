@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 //https://developer.android.com/guide/topics/ui/layout/recyclerview
@@ -58,7 +57,7 @@ class CustomAdapter(
 
         viewHolder.itemView.setOnClickListener {
             val showDetailsActivity = Intent(context, ItemDetailsActivity::class.java)
-            //showDetailsActivity.putExtra("com.example.listapp.ITEM_INDEX",position)
+            showDetailsActivity.putExtra("com.example.listapp.ITEM_INDEX",position)
             context.startActivity(showDetailsActivity)
         }
     }
