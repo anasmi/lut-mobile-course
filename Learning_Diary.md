@@ -69,7 +69,13 @@ Important notices is that unless a layout manager of the RecyclerViewer is speci
 Otherwise, only one element got rendered.
 Next, we have added textViews for descriptions and prices. Here, I have assumed that amount ot items in each array (items, descriptions, prices) is the same.
 Othwerwise, adapter might through ArrayOutOfBoundException. The instructor in the video later on also creates a custom adapter to assign values from resource arrays into the view correctly.
+`RecyclerView` doesn't have an itemClickListener anymore, so I've assigned a listener to each individual item inside the `CustomAdapter` class. Thus launching of a details activity happens from it.
+Due to this we should pass `MainActivity` object to the `CustomAdapter`, as an activity can only be started from a class extending the `Context. For example, an Activity extends Context, thus an activity can start another one.
 
+I've used different items in the list, as I didn't want to use pictures from the web to avoid any legal issues of using third party photoes. Apart from that application has the same functionality as the one presented in the video.
+
+Pictures used in the application are put under `drawable` folder that is located under `res`. Referencing a file is easy as it happens by name using `R.drawable.apple`, for example.
+To prevent application from failure when encountering a big picture, we first scale it down if necessary and only after that assign it to the ImageView.
 Useful links were, at least : 
 - https://stackoverflow.com/questions/50079026/why-are-some-views-located-inside-the-legacy-tab-in-android-studio-3-1-and-what
 - https://developer.android.com/guide/topics/ui/layout/recyclerview
