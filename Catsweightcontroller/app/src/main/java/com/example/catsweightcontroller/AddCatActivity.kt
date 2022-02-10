@@ -39,6 +39,7 @@ class AddCatActivity : AppCompatActivity() {
 
         //Don't show take picture button if there is no
         //camera available to a user
+        //https://stackoverflow.com/questions/1944117/check-if-device-has-a-camera
         if(!applicationContext.packageManager
                 .hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)) {
             val layout =  addPictureButton.parent as ViewGroup

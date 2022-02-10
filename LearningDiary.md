@@ -4,8 +4,8 @@
 25.01.2022 & 26.01.2022 &28.01.2022
 
 I started to set-up environment by watching the first introduction video. Video is a bit outdated
-as it still uses Java as a default language, while Kotlin is a preffered default option language.
-I've decided to use Kotlin in this course, as I would like to learn it and this seems like a good opportunity.
+as it uses Java as a default language choice and Kotlin is a default language for Android development right now.
+Therefore, I've decided to use Kotlin in this course, as I would like to learn it and this seems like a good opportunity.
 
 Android version I am using is the oldest available - 32, so it doesn't match the video's version,
 but I guess it's fine.
@@ -34,19 +34,19 @@ how application should be started, including what is the main activity of the ap
   - First, an api needs to be installed and licenses accepted. Otherwise, simulator doesn't start up.
 
 ## Part 2
-  Core elements to android development are :
+As discussed in the video, the core elements to android development are :
   - Activity : a rectangular area that displays something, not necessary a view only. Button also extends activity, for example.
   - Intent : an action we want to be performed. Works as an imediator, represents what a user what to do.
   - IntentService: does a task intent wants to be performed. Can be done on background.
   - BroadcastReceivers: received an intent from a `sendBroadcast` method often indicating that some work has been completed.
 
-In this part, following the video we are going to create a simple navigation example, where two buttons are added to main screen. Clicking one button
-activates another view in the application and the second button opens Chrome browser, if one is available.
+In this part, following the video I've created a simple navigation example, where two buttons are added to the main layout screen. Clicking the first button
+activates another view in the application and the second button opens Chrome browser, if one is available for the device in question.
 I've created a new project for this application. So this project is not related to the one created in previous part. Alternative would be to create
 separate branches for each part, but it's a bit easier to follow and add changes later on, if everything is present in master.
 
 Aligning elements vertically/horizontally in a parent layout, I have to first select an element. Otherwise, if I select all child components and align them,
-they are overlapping as they are all moved to the midle.
+they are overlapping as they are all moved to the middle.
 So, in this example, the second button is positioned relatively to the first one. It's top is attached to the bottom of the first button.
 Both are aligned to be in the middle of the view, and the first button is centered vertically in its parent layout.
 Making alignments explicit asserts that view is rendered properly in both orientations: portrait and landscape.
