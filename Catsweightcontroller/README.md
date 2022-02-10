@@ -16,3 +16,5 @@ Main features :
 - It's possible to add picture for your pet, if there is a camera available.
 - Weights entries are added only for existing in the system pets. If none animal is selected,
  no entry is saved.
+ 
+ Link to the video illisturating functionaloty of the app : https://youtu.be/nbh4AnOz9vc
