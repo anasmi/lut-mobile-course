@@ -1,4 +1,4 @@
-#Cat's weight controller app
+# Cat's weight controller app
 
 Using this application you can follow a development of your cat/cats weight.
 
@@ -18,3 +18,7 @@ Main features :
  no entry is saved.
  
  Link to the video illisturating functionaloty of the app : https://youtu.be/nbh4AnOz9vc
+ ## Running application
+ 
+ Check out this folder locally. Once you have it locally, import it in Android Studio using `File-> New -> Import existing project`. After that you can run `app` folder on your 
+ configured device. Note, that application was developed with API Level 32, thus it's higly recommended to use a device that minimum support version is 32 as well. 
