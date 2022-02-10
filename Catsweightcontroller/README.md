@@ -22,3 +22,4 @@ Main features :
  
  Check out this folder locally. Once you have it locally, import it in Android Studio using `File-> New -> Import existing project`. After that you can run `app` folder on your 
  configured device. Note, that application was developed with API Level 32, thus it's higly recommended to use a device that minimum support version is 32 as well. 
+Detailed instructions on how to run and build an android project could be found at the [Official dcocumentation](https://developer.android.com/studio/run)
